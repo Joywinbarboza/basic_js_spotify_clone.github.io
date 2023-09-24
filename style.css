@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+
+
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0; /* Add this line to bring the nav up to the top */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    height: 65px;
+    align-items: center;
+    color: white;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand img {
+    width: 45px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.container {
+    min-height: 70vh;
+    background-color: black;
+    color: black;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 75px auto;
+    border-radius: 12px;
+    padding: 35px;
+    background-image: url('bg.jpg');
+}
+
+.bottom {
+    position: sticky;
+    height: 130px;
+    color: white;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    color: white;
+    background-color: black;
+    /* width: 80%; */
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.songItem img {
+    width: 45px;
+    margin: 0 25px;
+    border: solid gray 1px;
+    border-radius: 23px;
+}
+
+.timestamp {
+    margin: 0 23px;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songItemContainer {
+    margin-top: 75px;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
